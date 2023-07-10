@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>MASTER GAS PERU</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Logo</div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="mobile.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide">
+          <img src="mobile.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide">
+          <img src="mobile.jpg" alt="Imagen 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-bar">
+    <div class="contact-info">
+      <div class="contact-info-item">Teléfono: 123456789</div>
+      <div class="contact-info-item">Correo: ejemplo@correo.com</div>
+    </div>
+     <ul id="menu">
+        <li><a href="#home">INICIO</a></li>
+        <li><a href="#about-us">SOBRE NOSOTROS</a></li>
+        <li><a href="#portfolio">PORTAFOLIO</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+
+  <div class="footer">
+   
+    <div class="button-group">
+      <button class="button">Otra página web 1</button>
+      <button class="button">Otra página web 2</button>
+      <button class="button">Otra página web 3</button>
+      <button class="button">Otra página web 4</button>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const slideWidth = slides[0].clientWidth;
+    let currentIndex = 0;
+
+    function goToSlide(index) {
+      slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+      goToSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Cambiar automáticamente cada 3 segundos
+  </script>
+
+			
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+</head>
+
+<body>
+
+
+
+<!-- section start-page -->
+
+  <section class="start-page parallax-background" id="home">
+  
+    <div class="opacity"></div>
+      <div class="content">
+        <div class="text">
+        
+          <h1>bienvenidos a <span>Master gas</span></h1>
+          <p>Servicios Generales S.A.C</p>
+          
+          <a href="#about-us">
+          <div class="read-more">lEER MÁS</div></a>
+          
+        </div>
+        <div class="arrow-down"></div>
+      </div>
+  
+  </section>
+
+  <!-- section menu mobile -->
+  
+  <section class="menu-media">
+  
+    <div class="menu-content">
+    
+      <div class="logo">MASTER GAS</div>
+      
+    
+    </div>
+   
+  </section>
+
+   
+   
+  <!-- section menu -->
+  
+  <section class="menu">
+
+    <div class="menu-content">
+      
+  
+  </section>
+
+
+  <!-- section about us -->
+  
+  <section class="about-us" id="about-us">
+  
+    <h1>SOBRE NOSOTROS</h1>
+    <hr/>
+   <p class="title" style="text-align: justify;"><center><h2>MASTER GAS: es una empresa que se dedica al desarrollo y ejecución de proyectos en termas de Gas para duchas, Jacuzzis, Piscinas, Electricidad General e Industrial, Aires Acondicionados, Sistemas de seguridad, Cercos eléctricos, Cámaras de Vigilancia para el hogar, Red Hotelera e Industrias con muy buena experiencia según normas técnicas, implementando todo estos proyectos en Lima y Provincias.</h2></p></center>
+
+        <div class="column-one">
+  
+        <div class="circle-one"></div>
+    
+          <h2>MISION</h2>
+          <p>Brindar las mejores soluciones de Servicios Generales en Termas de gas – gln, Electricidad, Aires acondicionados, Sistemas de seguridad a sus clientes, manteniendo los valores de calidad y buen servicio que siempre lo han caracterizado.</p>
+    
+      </div>
+
+      <div class="column-three">
+  
+        <div class="circle-three"></div>
+    
+        <h2>NUESTROS VALORES</h2>
+        <p>Puntualidad. Calidad. Confianza. Seguridad. Honestidad.</p>
+    
+    </div>  
+  
+      <div class="column-two">
+  
+        <div class="circle-two"></div>
+    
+          <h2>VISION</h2>
+          <p>Ser reconocidos en el mercado nacional como una empresa de Servicios comprometidos en mantener una cultura de calidad hacia nuestros clientes con una gran variedad de proyectos y productos, de marcas nacionales e internacionales.</p>
+    
+      </div>
+  
+  
+      
+    
+
+  </section>
+  
+  <div class="clear"></div>  
+
+  <!-- portoflio-->
+
+  <section class="portfolio" id="portfolio">
+
+
+    <div class="portfolio-margin">
+    
+      <h1>PORTFOLIO</h1>
+      <hr/> 
+    
+    <!-- 1 item portoflio-->
+    
+        <ul class="grid">
+        
+          <li> <img src="img/portfolio/1.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 1</p>
+                  <p class="description">Your text here...</p>   
+              </div>
+            
+          </li>
+          
+          <!-- 2 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/2.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 2</p>
+                  <p class="description">Your text here...</p>               
+              </div>
+            </a>
+          </li>      
+
+          <!-- 3 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/3.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 3</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>      
+
+
+          <!-- 4 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/4.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 4</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>    
+
+          <!-- 5 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/5.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 5</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>    
+          
+
+          <!-- 6 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/6.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 6</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>         
+           
+         <!-- 7 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/7.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 7</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>    
+          
+          <!-- 8 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/8.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 8</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>          
+          
+          <!-- 9 item portoflio-->
+          
+          <li>
+            <a href="#">
+              <img src="img/portfolio/9.png" alt="Portfolio item" />
+                <div class="text">
+                  <p>PORTFOLIO 9</p> 
+                  <p class="description">Your text here...</p>           
+              </div>
+            </a>
+          </li>          
+
+          
+        </ul>  
+   
+   <a href="#"><div class="read-more">LEER MAS</div></a>
+   
+   </div>   
+         
+   </section>
+
+  
+   <div class="clear"></div>  
+  
+  
+  
+  
+    <!-- partners-->
+
+    <section class="partners parallax-background-partners" id="partners">
+    
+    <div class="opacity"></div>
+    
+      <div class="content">
+      
+        <h2>Trabajamos con estas empresas</h2>
+        
+            <div class="logo">
+          
+                <a href="#"><img src="img/logos/bryant.png"></a>
+                <a href="#"><img src="img/logos/rheem.png"></a>
+                <a href="#"><img src="img/logos/sakura.png"></a>
+                <a href="#"><img src="img/logos/bosch.png"></a>
+              
+            </div>
+      
+      </div>
+
+    </section>
+
+
+    <!-- Contact-->
+
+   
+
+
+    <section class="footer">
+    
+      <div class="margin">
+      
+        <div class="menu-footer">
+        
+        <a href="#home">INICIO</a>
+        <a href="#">FACEBOOK</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">YOUTUBE</a>
+        
+        </div>
+        
+          <div class="copyright">MASTER GAS Y SERVICIOS GENERALES S.A.C</div>        
+
+      </div>
+    
+    
+    </section>    
+    
+
+</div>
+
+
+
+	<!-- Scripts -->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- jQuery -->
+	<script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->
+	<script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
+	<script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
+	<script src="js/script.js"></script> <!-- All script -->
+
+</body>
+
+</html>
